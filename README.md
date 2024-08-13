@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution Link](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d)
+- Live Site URL: [Live Site link](https://manasi-pimprikar.github.io/product-list-with-cart/)
 
 ## My process
 
