@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container-fluid" style="padding: 34px;">
+    <div class="product-container">
+      <div class="row product-row">
+        <div class="col-8 col-md-8 col-sm-6">
+          <div class="heading">
+            <h3 class="title">Desserts</h3>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4" id="card-container">        
+          </div>
+        </div>
+  
+        <div class="col-sm-6 col-md-4 col-8">
+          <div class="card" id="cart-card">
+            <div class="card-body">
+              <h5 class="card-title cart-title">Your Cart(0)</h5>
+              <div class="empty-cart">
+                <div class="img-div">
+                  <img src="./assets/images/illustration-empty-cart.svg" alt="empty cart image" class="empty-cart-img">
+                </div>
+                <p class="cart-text">Your added items will appear here</p>
+              </div>
+
+              <div class="selected-cart">
+                <ul class="list-group list-group-flush product-list">
+
+                </ul>
+
+                <div class="order-total">
+                  <div class="order-title">
+                    <p>Order Total</p>
+                  </div>
+                  <div class="order-price">
+                    <h3 id="totalOrderPrice">$46.50</h3>
+                  </div>
+                </div>
+
+                <div class="carbon-neutral-div">
+                  <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+                  <p>This is a <strong>carbon-neutral</strong> delivery.</p>
+                </div>
+
+                <div class="confirm-order">
+                  <button type="button" class="btn btn-primary" id="confirm-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Confirm Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="width: 37%;">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-heading">
+                <img src="./assets//images/icon-order-confirmed.svg" alt="order confirmed icon" id="orderConfirmedIcon">
+                <h3 id="modalTitle">Order Comfirmed</h3>
+                <p id="modalText">We hope you enjoy your food!</p>
+              </div>
+
+              <div class="modalProductList">
+                <ul class="modal-product-list">
+                </ul>
+
+                <div class="modal-order-total">
+                  <div class="modal-order-title">
+                      <p>Order Total</p>
+                  </div>
+                  <div class="modal-order-price">
+                      <h3 id="modalTotalOrderPrice"></h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-order-btn">
+                <button type="button" class="btn btn-primary" id="startNewOrderBtn" data-bs-dismiss="modal">Start New Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Desserts
+
+  Waffle with Berries
+  Waffle
+  6.50
+  Add to Cart
+
+  Vanilla Bean Crème Brûlée
+  Crème Brûlée
+  7.00
+  Add to Cart
+
+  Macaron Mix of Five
+  Macaron
+  8.00
+  Add to Cart
+
+  Classic Tiramisu
+  Tiramisu
+  5.50
+  Add to Cart
+
+  Pistachio Baklava
+  Baklava
+  4.00
+  Add to Cart
+
+  Lemon Meringue Pie
+  Pie
+  5.00
+  Add to Cart
+
+  Red Velvet Cake
+  Cake
+  4.50
+  Add to Cart
+
+  Salted Caramel Brownie
+  Brownie
+  4.50
+  Add to Cart
+
+  Vanilla Panna Cotta
+  Panna Cotta
+  6.50
+  Add to Cart -->
+
+  <!-- Your Cart (Quantity) -->
+  <!-- Your added items will appear here -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="./ts/index.js"></script>
+</body>
+</html>
